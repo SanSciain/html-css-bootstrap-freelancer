@@ -39,10 +39,30 @@ header{
 }
 
 /* Portfolio */
-
 .ms-portfolio-img-container {
     width: 100%;
     /* test */
     height: 250px;
     background-color: yellow;
+}
+
+/* About */
+.about {
+    background-color: #1abc9c;
+}
+
+/* Contact */
+.contact {
+    /* test */
+    background-color: rebeccapurple;
+    height: 500px;
+}
+
+/* Footer */
+.ms-upper-footer{
+    background-color: #3a546d;
+}
+
+.ms-bottom-footer {
+    background-color: #2c3e50;
 }
