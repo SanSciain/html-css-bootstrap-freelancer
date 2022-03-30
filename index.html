@@ -14,6 +14,9 @@
         crossorigin="anonymous"
         />
 
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <!-- Custom style -->
         <link rel="stylesheet" href="css/style.css" />
     </head>
@@ -21,17 +24,27 @@
 
         <!-- Header -->
         <header>
-            <div class="container-md">
-                <div class="row">
-                    <div class="col-9 col-md-6">
-                        <div class="ms-menu-title"></div>
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <div class="ms-menu-burger d-md-none"></div>
-                        <div class="ms-menu d-none d-md-block"></div>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-md">
+                    <h1 class="ms-nav-text">Start Bootstrap</h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link ms-nav-text" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ms-nav-text" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ms-nav-text" href="#contact">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
         <!-- /Header -->
 
@@ -41,7 +54,9 @@
             <!-- Jumbotron -->
             <section class="jumbo">
                 <div class="container d-flex flex-column align-items-center py-5">
-                    <div class="ms-jumbo-img-container"></div>
+                    <div class="ms-jumbo-img-container">
+                        <img class="mb-4" src="img/avatar.svg" alt="profile pic">
+                    </div>
                     <div class="ms-jumbo-text-container">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla tenetur alias id porro illo reprehenderit necessitatibus temporibus adipisci fuga nam hic error culpa, ab quam laboriosam, excepturi et veritatis.
                     </div>
@@ -50,7 +65,7 @@
             <!-- /Jumbotron -->
 
             <!-- Portfolio -->
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="container py-5">
                     <div class="row g-3">
                         <div class="col-12">
@@ -82,7 +97,7 @@
             <!-- /Portfolio -->
 
             <!-- About -->
-            <section class="about">
+            <section class="about" id="about">
                 <div class="ms-container-small">
                     <div class="container-fluid py-5">
                         <div class="row g-3">
@@ -103,7 +118,7 @@
             <!-- /About -->
 
             <!-- Contact -->
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="ms_container-small">
                     <div class="container-fluid py-5">
 
