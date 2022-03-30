@@ -1,4 +1,13 @@
+/* Common */
+html {
+    font-size: 62.5%;
+}
 
+.ms-container-small {
+    max-width: 1170px;
+    width: 60%;
+    margin: 0 auto;
+}
 /* Header */
 header{
     background-color: #2c3e50;
