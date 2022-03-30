@@ -95,6 +95,30 @@ header{
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+}
+
+.ms-portfolio-img-container .ms-layover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.ms-layover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+}
+
+.ms-portfolio-img-container:hover .ms-layover {
+    display: block;
 }
 
 /* About */
@@ -111,7 +135,11 @@ header{
     color: white;
 }
 
-
+.about .ms-btn:hover{
+    background-color: white;
+    color: #1abc9c;
+    border: 2px solid #1abc9c;
+}
 
 /* Contact */
 
@@ -148,12 +176,56 @@ header{
     color: white;
 }
 
+.contact .ms-btn:hover{
+    background-color: white;
+    color: #1abc9c;
+    border: 1px solid #1abc9c;
+}
+
 
 /* Footer */
+/* Upper Footer */
 .ms-upper-footer{
     background-color: #3a546d;
 }
 
+.ms-upper-footer-text-container{
+    text-align: center;
+    color: white;
+}
+
+.ms-upper-footer-text-container h3{
+    text-transform: uppercase;
+}
+
+.ms-upper-footer-text-container{
+    font-size: 1.5rem;
+}
+
+.ms-upper-footer-text-container span {
+    text-transform: capitalize;
+    color: #1abc9c;
+}
+
+.ms-upper-footer-text-container span:hover{
+    text-decoration: underline;
+}
+
+.ms-icons-wrapper i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid white;
+    color: white;
+    margin: 1rem .5rem;
+    border-radius: 50%;
+}
+
+
+/* Bottom Footer */
 .ms-bottom-footer {
     background-color: #2c3e50;
 }
